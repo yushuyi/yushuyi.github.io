@@ -4,17 +4,24 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives: 2016 | 余书懿的技术博客</title>
+  <title>终端与iOS | 余书懿的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="余书懿的技术博客">
-<meta property="og:url" content="http://yoursite.com/archives/2016/index.html">
+  <meta name="description" content="搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
+sudo find /Users/justfly/Documents/workspace/justSVN/ -name &amp;quot;.svn&amp;quot; -exec rm -r {} \;
+显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAllFil">
+<meta property="og:type" content="article">
+<meta property="og:title" content="终端与iOS">
+<meta property="og:url" content="http://yoursite.com/terminal-and-ios/index.html">
 <meta property="og:site_name" content="余书懿的技术博客">
-<meta property="og:description">
+<meta property="og:description" content="搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
+sudo find /Users/justfly/Documents/workspace/justSVN/ -name &amp;quot;.svn&amp;quot; -exec rm -r {} \;
+显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAllFil">
+<meta property="og:updated_time" content="2016-06-21T09:22:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="余书懿的技术博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="终端与iOS">
+<meta name="twitter:description" content="搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
+sudo find /Users/justfly/Documents/workspace/justSVN/ -name &amp;quot;.svn&amp;quot; -exec rm -r {} \;
+显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAllFil">
   
     <link rel="alternative" href="/atom.xml" title="余书懿的技术博客" type="application/atom+xml">
   
@@ -211,296 +218,119 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-terminal-and-ios" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/terminal-and-ios/" class="article-date">
+  	<time datetime="2016-06-21T09:07:12.000Z" itemprop="datePublished">2016-06-21</time>
+</a>
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      终端与iOS
+    </h1>
+  
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/terminal-and-ios/" class="archive-article-date">
-  	<time datetime="2016-06-21T09:07:12.000Z" itemprop="datePublished">Jun 21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/terminal-and-ios/">终端与iOS</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="搜索指定文件夹内的-指定文件-进行批量删除操作"><a href="#搜索指定文件夹内的-指定文件-进行批量删除操作" class="headerlink" title="搜索指定文件夹内的 指定文件, 进行批量删除操作"></a>搜索指定文件夹内的 指定文件, 进行批量删除操作</h4><p>引用:<a href="http://www.cnblogs.com/heiniuhaha/archive/2011/11/28/2266461.html" target="_blank" rel="external">Mac删除文件夹里所有的.svn文件</a></p>
+<pre><code>sudo find /Users/justfly/Documents/workspace/justSVN/ -name &quot;.svn&quot; -exec rm -r {} \;
+</code></pre><h4 id="显示Mac隐藏文件的命令"><a href="#显示Mac隐藏文件的命令" class="headerlink" title="显示Mac隐藏文件的命令"></a>显示Mac隐藏文件的命令</h4><pre><code>defaults write com.apple.finder AppleShowAllFiles  YES
+</code></pre><p>注:默认为<code>NO</code>,表示不显示,命令执行后需要重新启动<code>Finder</code>.</p>
+<h4 id="利用-lipo-合并静态库文件"><a href="#利用-lipo-合并静态库文件" class="headerlink" title="利用 lipo 合并静态库文件"></a>利用 lipo 合并静态库文件</h4><pre><code>lipo -create /releasepath.a /debugpath.a -output /newpath.a
+</code></pre><p>注: 请全部使用<code>完整路径</code>     </p>
+<h4 id="在终端中进入文件夹"><a href="#在终端中进入文件夹" class="headerlink" title="在终端中进入文件夹"></a>在终端中进入文件夹</h4><h6 id="前往目录"><a href="#前往目录" class="headerlink" title="前往目录"></a>前往目录</h6><pre><code>cd Desktop
+</code></pre><p>如果文件夹的名称中有<code>空格</code>,则需要加<code>反斜杠</code>来标识,例如:<br><code>cd iPhone Developer</code>  需要写成 <code>cd iPhone\ Developer</code></p>
+<h6 id="返回上一层目录"><a href="#返回上一层目录" class="headerlink" title="返回上一层目录:"></a>返回上一层目录:</h6><pre><code>cd ../
+</code></pre><h4 id="统计代码行数"><a href="#统计代码行数" class="headerlink" title="统计代码行数"></a>统计代码行数</h4><p>引用:<a href="http://www.cnblogs.com/visen-0/archive/2013/02/18/2915147.html" target="_blank" rel="external">iOS开发_统计xcode代码行数</a></p>
+<pre><code>find . -name &quot;*.m&quot; -or -name &quot;*.h&quot; -or -name &quot;*.xib&quot; -or -name &quot;*.c&quot; -or -name &quot;*.storyboard&quot;  |xargs wc -l
+</code></pre><p>注:需要进入<code>cd</code>到统计代码的<code>目录</code></p>
+<h4 id="查找指定目录下-静态库-a-架构支持情况"><a href="#查找指定目录下-静态库-a-架构支持情况" class="headerlink" title="查找指定目录下 静态库(.a)架构支持情况"></a>查找指定目录下 静态库(.a)架构支持情况</h4><pre><code>find path  -name &quot;*.a&quot; -exec lipo -info &quot;{}&quot; \;
+</code></pre><h4 id="让LLDB默认就导入UIKit库"><a href="#让LLDB默认就导入UIKit库" class="headerlink" title="让LLDB默认就导入UIKit库"></a>让LLDB默认就导入UIKit库</h4><pre><code>echo display @import UIKit &gt;&gt; ~/.lldbinit
+echo display @import AppKit &gt;&gt; ~/.lldbinit
+</code></pre>
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/git-note/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git使用笔记</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/git-note/" class="archive-article-date">
-  	<time datetime="2016-04-07T10:13:41.000Z" itemprop="datePublished">Apr 7</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/git-note/">Git使用笔记</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/xampp-and-service/" class="archive-article-date">
-  	<time datetime="2016-03-30T08:30:23.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/xampp-and-service/">基于XAMPP搭建本地Web Service环境</a>
-    </h1>
-  
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/use-asset-catalog/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:48:56.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/use-asset-catalog/">use-asset-catalog</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/about-terminal/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:45:40.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/about-terminal/">about-terminal</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/xcode-plugins/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:44:43.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/xcode-plugins/">好用的Xcode插件</a>
-    </h1>
-  
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="terminal-and-ios" data-title="终端与iOS" data-url="http://yoursite.com/terminal-and-ios/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/migrate-parse/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:43:43.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/migrate-parse/">migrate-parse</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/alipay/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:43:19.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/alipay/">alipay</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/use-R-swift/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:42:50.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/use-R-swift/">通过 R.swift 以安全的方式获取和调用资源</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/apple-pay/" class="archive-article-date">
-  	<time datetime="2016-03-30T07:42:15.000Z" itemprop="datePublished">Mar 30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/apple-pay/">apple-pay</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2016/page/2/">2</a><a class="extend next" rel="next" href="/archives/2016/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 </div>
       <footer id="footer">
@@ -526,8 +356,8 @@ var _hmt = _hmt || [];
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false

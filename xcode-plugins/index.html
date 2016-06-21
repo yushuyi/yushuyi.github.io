@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>xcode-plugins | 余书懿的技术博客</title>
+  <title>好用的Xcode插件 | 余书懿的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="引言插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.
+参考资料:1:插件制作入门">
 <meta property="og:type" content="article">
-<meta property="og:title" content="xcode-plugins">
+<meta property="og:title" content="好用的Xcode插件">
 <meta property="og:url" content="http://yoursite.com/xcode-plugins/index.html">
 <meta property="og:site_name" content="余书懿的技术博客">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-03-30T07:44:43.000Z">
+<meta property="og:description" content="引言插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.
+参考资料:1:插件制作入门">
+<meta property="og:updated_time" content="2016-03-30T08:30:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xcode-plugins">
-<meta name="twitter:description">
+<meta name="twitter:title" content="好用的Xcode插件">
+<meta name="twitter:description" content="引言插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.
+参考资料:1:插件制作入门">
   
     <link rel="alternative" href="/atom.xml" title="余书懿的技术博客" type="application/atom+xml">
   
@@ -91,7 +94,7 @@ var _hmt = _hmt || [];
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -229,7 +232,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      xcode-plugins
+      好用的Xcode插件
     </h1>
   
 
@@ -245,7 +248,27 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。<br>Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.</p>
+<p>参考资料:<br>1:插件制作入门<br><a href="http://onevcat.com/2013/02/xcode-plugin/" target="_blank" rel="external">http://onevcat.com/2013/02/xcode-plugin/</a><br>2:XCode插件管理工具：Alcatraz<br><a href="http://t.cn/zQEVFpS" target="_blank" rel="external">http://t.cn/zQEVFpS</a></p>
+<p>安装:<br>Alcatraz的Github托管地址如下:<br><a href="https://github.com/mneorr/alcatraz" target="_blank" rel="external">https://github.com/mneorr/alcatraz</a><br>它的安装方式非常简单,只需要一步,启动终端粘贴如下命令 运行即可:<br>mkdir -p ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins;<br>curl -L <a href="http://goo.gl/xfmmt" target="_blank" rel="external">http://goo.gl/xfmmt</a> | tar xv -C ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -<br>不过以上的安装所安装的版本可能不是最新的,但也不会差很远,如果需要安装最新版本的,可以前往Alcatraz的Github地址下载源码自行编译.<br>不过记得在编译之前,用终端执行pod install获取一下Alcatraz所需要的依赖框架. 否则无法编译通过.</p>
+<p>安装成功以后,我们可以在Xcode的顶部菜单Window中打开它来,当然在这之前你有必要重启一下你的Xcode:</p>
+<p>使用:<br>Alcatraz主要包含了以下三类插件,<br>分别是:<br>1.集成插件<br>2.代码颜色方案<br>3.代码模版</p>
+<p>使用Alcatraz提供的插件只需要对相应插件进行勾选即可完成安装, 如果是卸载则取消选中.  如果需要更新某个插件,只需要取消选中以后再一次勾选即可完成更新.</p>
+<p>个人认为最实用的应该是集成插件这一块,通过安装一些有用的插件,可以全面的加速我们的开发效率.<br>接下来介绍几个目前我正在使用的插件:<br>1:KSImageNamed<br>在编写代码的时编译器提供的代码智能感知启着举足轻重的地位. 但是Xcoode对资源那一块的名称却没有提供智能感知. 这多多少少影响了一些效率,甚至让人烦躁.<br>不过好在KSImageNamed的出现,很好的解决了这个问题. 它可以智能感知目前工程中内的图片资料,通过我们常用的imageNamed,即可自动的显示出来,如下图:</p>
+<p>2:OMColorSense<br>在代码中,我们经常需要对UI控件设置具体的颜色值,可是UIKit提供的颜色API设置起来非常繁琐,且不够直观.<br>而OMColorSense的出现就是为了解决这个不够直观和设置繁琐的问题.<br>安装完插件以后,我们可以直接在代码层面直接打开颜色选择器,来快速设置,并且可以预览我们设定的颜色是否正确,这实在太棒了!</p>
+<p>3:VVDocumenter-Xcode<br>VVDocumenter-Xcode是一个主要辅助编写注释的插件,通过三个反斜杠///所生成的注释格式,将与苹果官方保持一致,这样很好的兼容了Xcode自带注释查看功能.</p>
+<p>4:AutoresizeMask-for-Xcode<br>AutoresizeMask-for-Xcode让AutoresizingMask在代码层面拥有和xib一样的可视化的效果,这方便我们用好和用准AutoresizingMask</p>
+<p>5:SCXcodeMiniMap<br>SCXcodeMiniMap的灵感应该来源于Sublime Text.在代码编辑页面中,添加整页代码的迷你预览图,方面使用者能够快速拖动定位到关键位置.</p>
+<p>6:Lin(Xcode 5 需要手动安装)<br>Lin是一个辅助iOS多语言功能的插件. 通过使用它可以大大的节省我们在多语言编码时的劳动力. 我相信,一担用起来,你就会喜欢上它了.</p>
+<p>7:FuzzyAutocompletePlugin<br>代码自动补全的升级版,及时你输入错误了,它也帮你提示出,你最想提示的那行代码,牛B.</p>
+<p>8:XToDo<br>是否有为待办事项写注释的习惯??  久了久了 又忘掉了? XToDo可以帮你显示出代码中所有的待办列表,并且迅速定位</p>
+<p>9:RRConstraintsPlugin<br>RRConstraintsPlugin是一个在IB中使用自动布局的辅助插件.</p>
+<p>10:injectionforxcode<br>injectionforxcode是一个神奇的插件,可以实时的修改代码,而不需要重新编译运行到模拟器中.其核心实现技术真是一大亮点.</p>
+<p>参考资料:<br><a href="http://nonomori.farbox.com/post/injection-plugin-for-xcode" target="_blank" rel="external">http://nonomori.farbox.com/post/injection-plugin-for-xcode</a></p>
+<p>卸载:<br>卸载Alcatraz只需要两部操作<br>1:删除 ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin<br>2:利用终端命令删除Alcatraz生成的文件夹和其文件<br>rm -rf ~/Library/Application\ Support/Alcatraz/</p>
+<p>风险:<br>当我们将各个插件成功安装以后,在Xcode的每次启动时都会去加载我们集成进去的插件资源. 而这些插件都附属在Xcode的进程里,也就是说,是在同一条生命线上面.此时如果插件中的任何一行代码有误,所产生的Crash,都会导致Xcode整个进程一起挂掉.<br>理想的情况下,插件的作者都会在最新版本的Xcode进行测试并修复相应问题. 但如果我们自己需要急着使用最新版本的Xcode,而此时插件作者还没有提供更新,那也只好先将相应的插件卸载掉,以此来避免因新版本兼容性问题所引起的Crash.<br>安装后的插件所存储的目录是:<br>~/Library/Application Support/Developer/Shared/Xcode<br>也可以手动清除所有插件.</p>
+<p>总结:</p>
+
       
     </div>
     
@@ -300,7 +323,7 @@ var _hmt = _hmt || [];
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="xcode-plugins" data-title="xcode-plugins" data-url="http://yoursite.com/xcode-plugins/"></div>
+	<div class="ds-thread" data-thread-key="xcode-plugins" data-title="好用的Xcode插件" data-url="http://yoursite.com/xcode-plugins/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
