@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>终端与iOS | 余书懿的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
+  <meta name="description" content="1：搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
 sudo find /Users/justfly/Documents/workspace/justSVN/ -name &amp;quot;.svn&amp;quot; -exec rm -r {} \;
-显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAllFil">
+2：显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="终端与iOS">
 <meta property="og:url" content="http://yoursite.com/terminal-and-ios/index.html">
 <meta property="og:site_name" content="余书懿的技术博客">
-<meta property="og:description" content="搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
+<meta property="og:description" content="1：搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
 sudo find /Users/justfly/Documents/workspace/justSVN/ -name &amp;quot;.svn&amp;quot; -exec rm -r {} \;
-显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAllFil">
-<meta property="og:updated_time" content="2016-06-21T09:22:19.000Z">
+2：显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAl">
+<meta property="og:updated_time" content="2016-06-21T09:39:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="终端与iOS">
-<meta name="twitter:description" content="搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
+<meta name="twitter:description" content="1：搜索指定文件夹内的 指定文件, 进行批量删除操作引用:Mac删除文件夹里所有的.svn文件
 sudo find /Users/justfly/Documents/workspace/justSVN/ -name &amp;quot;.svn&amp;quot; -exec rm -r {} \;
-显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAllFil">
+2：显示Mac隐藏文件的命令defaults write com.apple.finder AppleShowAl">
   
     <link rel="alternative" href="/atom.xml" title="余书懿的技术博客" type="application/atom+xml">
   
@@ -251,20 +251,20 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="搜索指定文件夹内的-指定文件-进行批量删除操作"><a href="#搜索指定文件夹内的-指定文件-进行批量删除操作" class="headerlink" title="搜索指定文件夹内的 指定文件, 进行批量删除操作"></a>搜索指定文件夹内的 指定文件, 进行批量删除操作</h4><p>引用:<a href="http://www.cnblogs.com/heiniuhaha/archive/2011/11/28/2266461.html" target="_blank" rel="external">Mac删除文件夹里所有的.svn文件</a></p>
+        <h4 id="1：搜索指定文件夹内的-指定文件-进行批量删除操作"><a href="#1：搜索指定文件夹内的-指定文件-进行批量删除操作" class="headerlink" title="1：搜索指定文件夹内的 指定文件, 进行批量删除操作"></a>1：搜索指定文件夹内的 指定文件, 进行批量删除操作</h4><p>引用:<a href="http://www.cnblogs.com/heiniuhaha/archive/2011/11/28/2266461.html" target="_blank" rel="external">Mac删除文件夹里所有的.svn文件</a></p>
 <pre><code>sudo find /Users/justfly/Documents/workspace/justSVN/ -name &quot;.svn&quot; -exec rm -r {} \;
-</code></pre><h4 id="显示Mac隐藏文件的命令"><a href="#显示Mac隐藏文件的命令" class="headerlink" title="显示Mac隐藏文件的命令"></a>显示Mac隐藏文件的命令</h4><pre><code>defaults write com.apple.finder AppleShowAllFiles  YES
+</code></pre><h4 id="2：显示Mac隐藏文件的命令"><a href="#2：显示Mac隐藏文件的命令" class="headerlink" title="2：显示Mac隐藏文件的命令"></a>2：显示Mac隐藏文件的命令</h4><pre><code>defaults write com.apple.finder AppleShowAllFiles  YES
 </code></pre><p>注:默认为<code>NO</code>,表示不显示,命令执行后需要重新启动<code>Finder</code>.</p>
-<h4 id="利用-lipo-合并静态库文件"><a href="#利用-lipo-合并静态库文件" class="headerlink" title="利用 lipo 合并静态库文件"></a>利用 lipo 合并静态库文件</h4><pre><code>lipo -create /releasepath.a /debugpath.a -output /newpath.a
+<h4 id="3：利用-lipo-合并静态库文件"><a href="#3：利用-lipo-合并静态库文件" class="headerlink" title="3：利用 lipo 合并静态库文件"></a>3：利用 lipo 合并静态库文件</h4><pre><code>lipo -create /releasepath.a /debugpath.a -output /newpath.a
 </code></pre><p>注: 请全部使用<code>完整路径</code>     </p>
-<h4 id="在终端中进入文件夹"><a href="#在终端中进入文件夹" class="headerlink" title="在终端中进入文件夹"></a>在终端中进入文件夹</h4><h6 id="前往目录"><a href="#前往目录" class="headerlink" title="前往目录"></a>前往目录</h6><pre><code>cd Desktop
+<h4 id="4：在终端中进入文件夹"><a href="#4：在终端中进入文件夹" class="headerlink" title="4：在终端中进入文件夹"></a>4：在终端中进入文件夹</h4><h6 id="前往目录"><a href="#前往目录" class="headerlink" title="前往目录"></a>前往目录</h6><pre><code>cd Desktop
 </code></pre><p>如果文件夹的名称中有<code>空格</code>,则需要加<code>反斜杠</code>来标识,例如:<br><code>cd iPhone Developer</code>  需要写成 <code>cd iPhone\ Developer</code></p>
 <h6 id="返回上一层目录"><a href="#返回上一层目录" class="headerlink" title="返回上一层目录:"></a>返回上一层目录:</h6><pre><code>cd ../
-</code></pre><h4 id="统计代码行数"><a href="#统计代码行数" class="headerlink" title="统计代码行数"></a>统计代码行数</h4><p>引用:<a href="http://www.cnblogs.com/visen-0/archive/2013/02/18/2915147.html" target="_blank" rel="external">iOS开发_统计xcode代码行数</a></p>
+</code></pre><h4 id="5：统计代码行数"><a href="#5：统计代码行数" class="headerlink" title="5：统计代码行数"></a>5：统计代码行数</h4><p>引用:<a href="http://www.cnblogs.com/visen-0/archive/2013/02/18/2915147.html" target="_blank" rel="external">iOS开发_统计xcode代码行数</a></p>
 <pre><code>find . -name &quot;*.m&quot; -or -name &quot;*.h&quot; -or -name &quot;*.xib&quot; -or -name &quot;*.c&quot; -or -name &quot;*.storyboard&quot;  |xargs wc -l
 </code></pre><p>注:需要进入<code>cd</code>到统计代码的<code>目录</code></p>
-<h4 id="查找指定目录下-静态库-a-架构支持情况"><a href="#查找指定目录下-静态库-a-架构支持情况" class="headerlink" title="查找指定目录下 静态库(.a)架构支持情况"></a>查找指定目录下 静态库(.a)架构支持情况</h4><pre><code>find path  -name &quot;*.a&quot; -exec lipo -info &quot;{}&quot; \;
-</code></pre><h4 id="让LLDB默认就导入UIKit库"><a href="#让LLDB默认就导入UIKit库" class="headerlink" title="让LLDB默认就导入UIKit库"></a>让LLDB默认就导入UIKit库</h4><pre><code>echo display @import UIKit &gt;&gt; ~/.lldbinit
+<h4 id="6：查找指定目录下-静态库-a-架构支持情况"><a href="#6：查找指定目录下-静态库-a-架构支持情况" class="headerlink" title="6：查找指定目录下 静态库(.a)架构支持情况"></a>6：查找指定目录下 静态库(.a)架构支持情况</h4><pre><code>find path  -name &quot;*.a&quot; -exec lipo -info &quot;{}&quot; \;
+</code></pre><h4 id="7：让LLDB默认就导入UIKit库"><a href="#7：让LLDB默认就导入UIKit库" class="headerlink" title="7：让LLDB默认就导入UIKit库"></a>7：让LLDB默认就导入UIKit库</h4><pre><code>echo display @import UIKit &gt;&gt; ~/.lldbinit
 echo display @import AppKit &gt;&gt; ~/.lldbinit
 </code></pre>
       
