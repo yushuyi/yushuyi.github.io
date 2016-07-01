@@ -36,7 +36,7 @@
 <meta property="og:image" content="http://yoursite.com/../images/01/04.png">
 <meta property="og:image" content="http://yoursite.com/../images/01/02.png">
 <meta property="og:image" content="http://yoursite.com/../images/01/03.png">
-<meta property="og:updated_time" content="2016-03-07T11:19:10.000Z">
+<meta property="og:updated_time" content="2016-07-01T17:22:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Hexo+Github搭建个人博客">
 <meta name="twitter:description" content="引言Hexo是一款集快速、简洁且高效的博客框架,基于Node.js开发，本文主要介绍Hexo+Github部署博客的流程以及遇到的问题。
@@ -126,7 +126,7 @@ var _hmt = _hmt || [];
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -296,7 +296,7 @@ $ cd /path
 $ npm install
 </code></pre><h6 id="生成静态界面"><a href="#生成静态界面" class="headerlink" title="生成静态界面"></a>生成静态界面</h6><pre><code>$ hexo generate(缩写 hexo g)
 </code></pre><h6 id="本地运行Hexo"><a href="#本地运行Hexo" class="headerlink" title="本地运行Hexo"></a>本地运行Hexo</h6><pre><code>$ hexo server(缩写 hexo s)
-</code></pre><p>到此，<code>Hexo</code>的安装已经完成！控制台会提示你通过浏览器打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br><img src="../images/01/01.png" alt="Hexo本地服务完成启动" style="width: 559px;height:29px;"></p>
+</code></pre><p>到此，<code>Hexo</code>的安装已经完成！控制台会提示你通过浏览器打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br><img src="../images/01/01.png" alt="Hexo本地服务完成启动"></p>
 <h6 id="Hexo主配置文件"><a href="#Hexo主配置文件" class="headerlink" title="Hexo主配置文件"></a>Hexo主配置文件</h6><p><code>Hexo</code>主配置文件位于<code>init</code>完成以后的根目录</p>
 <pre><code>/Blog path/_config.yml
 </code></pre><h6 id="选定主题"><a href="#选定主题" class="headerlink" title="选定主题"></a>选定主题</h6><p>知乎的这篇<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">帖子</a>介绍了目前基于<code>Hexo</code>开发的个性主题。</p>
@@ -310,16 +310,16 @@ $ npm install
 <pre><code>npm install hexo-deployer-git --save
 </code></pre><p>最终执行部署</p>
 <pre><code>hexo deploy(缩写 hexo d)
-</code></pre><p>一切顺利的话，会提示如下图：<br><img src="../images/01/04.png" alt="Hexo已完成部署至Git" style="width: 705px;height:151px;"></p>
+</code></pre><p>一切顺利的话，会提示如下图：<br><img src="../images/01/04.png" alt="Hexo已完成部署至Git"></p>
 <h3 id="博客文件管理与撰写文章"><a href="#博客文件管理与撰写文章" class="headerlink" title="博客文件管理与撰写文章"></a>博客文件管理与撰写文章</h3><h4 id="博客文件管理"><a href="#博客文件管理" class="headerlink" title="博客文件管理"></a>博客文件管理</h4><p><code>Hexo init</code>生成后的文件对于博客主来说非常重要，相当于你的博客管理后台，更相当于程序的源代码，既然是源代码就会涉及到维护的问题，所以，选择合适的版本控制工具是非常有必要的，我采用的方案是<a href="https://bitbucket.org" target="_blank" rel="external">BitBucket</a>来对源代码进行版本控制。</p>
 <p><code>BitBucket</code>提供最多五个人的免费私有仓库。对个博客主来说是非常不错的选择。</p>
 <h4 id="撰写文章"><a href="#撰写文章" class="headerlink" title="撰写文章"></a>撰写文章</h4><p>撰写文章方面我选用的是<a href="http://macdown.uranusjr.com/" target="_blank" rel="external">MacDown</a></p>
 <h4 id="添加百度统计"><a href="#添加百度统计" class="headerlink" title="添加百度统计"></a>添加百度统计</h4><p>我参考的是这篇<a href="http://www.pmbuf.com/2015/09/15/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/" target="_blank" rel="external">文章</a>，基于<code>yilia</code>主题</p>
 <h3 id="在撰写博客时，遇到的一些问题"><a href="#在撰写博客时，遇到的一些问题" class="headerlink" title="在撰写博客时，遇到的一些问题"></a>在撰写博客时，遇到的一些问题</h3><h4 id="Hexo-默认主题打开非常缓慢"><a href="#Hexo-默认主题打开非常缓慢" class="headerlink" title="Hexo 默认主题打开非常缓慢"></a>Hexo 默认主题打开非常缓慢</h4><p>抓包访问以后发现，原来默认的主题采用了<code>Google</code>一款云字体，这是导致缓慢的主要原因，这有一片<a href="http://kuangqi.me/tricks/hexo-optimizations-for-mainland-china/" target="_blank" rel="external">文章</a>详细介绍了如何去除<code>Google</code>的云字体</p>
 <h4 id="MacdDown图片路径问题"><a href="#MacdDown图片路径问题" class="headerlink" title="MacdDown图片路径问题:"></a><code>MacdDown</code>图片路径问题:</h4><p>设置图片的代码直接用<code>HTML</code>,而不是用<code>Markdown</code>标准的语法，原因是可以灵活设置大小，代码如下：</p>
-<pre><code>&lt;img src=&quot;../images/01/01.png&quot; alt=&quot;图片的本地路径&quot; style=&quot;width: 559px;height:29px;&quot;/&gt;
-</code></pre><p>那么对应在<code>/Blog path/source/</code> 目录下我也会设置好这个图片：<br><img src="../images/01/02.png" alt="图片的本地路径" style="width: 691px;height:221px;"></p>
-<p><code>MacDown</code>会根据相对路径找到图片并显示出来。<br>但是<code>Hexo</code>生成运行之后，在浏览器却无法正常加载，<strong>路径无效</strong>。检查后发现，原来<code>Hexo</code>在生成博客文章时，会根据时间来按文件夹细分，默认情况下精确到<strong>年-月-日-文章名称</strong>的路径，如下图：<br><img src="../images/01/03.png" alt="博客默认的生成路径" style="width: 398px;height:35px;"></p>
+<pre><code>&lt;img src=&quot;../images/01/01.png&quot; alt=&quot;图片的本地路径&quot;/&gt;
+</code></pre><p>那么对应在<code>/Blog path/source/</code> 目录下我也会设置好这个图片：<br><img src="../images/01/02.png" alt="图片的本地路径"></p>
+<p><code>MacDown</code>会根据相对路径找到图片并显示出来。<br>但是<code>Hexo</code>生成运行之后，在浏览器却无法正常加载，<strong>路径无效</strong>。检查后发现，原来<code>Hexo</code>在生成博客文章时，会根据时间来按文件夹细分，默认情况下精确到<strong>年-月-日-文章名称</strong>的路径，如下图：<br><img src="../images/01/03.png" alt="博客默认的生成路径"></p>
 <p>那么我们前面设置的图片路径肯定是无法正确加载图片，因为路径不正确。<br>解决办法是修改<code>Hexo</code>生成博客文件路径的方式，。打开<code>/Blog path/_config.yml</code> 找到第17行,代码如下：</p>
 <pre><code>permalink: :year/:month/:day/:title/
 </code></pre><p>我们将生成的方式修改为只根据title进行生成，代码如下：</p>
