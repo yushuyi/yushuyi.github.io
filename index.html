@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -724,32 +724,32 @@ echo &quot;$var/R.swift/rswift&quot; #打印路径确认是否正确
       
         <h3 id="什么是动态库（Dynamic-framework）？"><a href="#什么是动态库（Dynamic-framework）？" class="headerlink" title="什么是动态库（Dynamic framework）？"></a>什么是动态库（Dynamic framework）？</h3><p>什么是<code>动态库</code>相信已经不再陌生，在iOS8以后，我们的选择不再只有静态库。本文主要介绍如何在<code>Xcode Workspace</code>中使用动态库！</p>
 <p>创建动态库，如下图所示：</p>
-<p><img src="../images/02/01.png" alt="创建动态库" style="width: 365px;height:259px;"></p>
+<p><img src="../images/02/01.png" alt="创建动态库"></p>
 <p>创建好以后即可开始创建或导入相应的类文件，我在<code>Framework</code>里面添加了 <code>Test.swift</code>。如下图：</p>
-<p><img src="../images/02/02.png" alt="Test Class" style="width: 435px;height:109px;"></p>
+<p><img src="../images/02/02.png" alt="Test Class"></p>
 <p>类文件部署完成以后应该对<code>Framework</code>单独编译一次，确保库自身没有错误。<br>接着，在需要使用这个<code>Framework</code>的<code>Project</code>中引入这个<code>Framework</code>，<br>如下图：</p>
-<p><img src="../images/02/03.png" alt="引入Framework" style="width: 338px;height:81px;"></p>
+<p><img src="../images/02/03.png" alt="引入Framework"></p>
 <p>继续，我在<code>Project</code>里面<strong>使用</strong>这个<code>Framework</code>。如果是<code>Swift</code>的代码应该按如下方式引入这个<code>Framework</code>：</p>
-<p><img src="../images/02/04.png" alt="import Framework" style="width: 350px;height:112px;"></p>
+<p><img src="../images/02/04.png" alt="import Framework"></p>
 <p>最后终于到了使用<code>Framework</code>里面某个类的代码了。</p>
 <p>接下来分别介绍引入<code>Swift</code>类文件和<code>Objective-C</code>类型需要注意的细节。<br>首先是<code>Swift</code><br>1：确保你要调用的类，属性，方法声明了 <code>public</code> 前缀，如下图：<br>接着是<code>Objective-C</code><br>1：将对外的头文件设位置到<code>Public</code>区域</p>
-<p><img src="../images/02/05.png" alt="public header file" style="width: 423px;height:198px;"></p>
+<p><img src="../images/02/05.png" alt="public header file"></p>
 <p>2：接着，在<code>TestFramework.h</code>文件中引入刚刚公共的类库</p>
-<p><img src="../images/02/06.png" alt="#import" style="width: 467px;height:164px;"></p>
+<p><img src="../images/02/06.png" alt="#import"></p>
 <p>按照以上设置一路过来，模拟器的编译和运行应该跑通了，但在编译真机的时候可能会出现启动崩溃，提示如下图：</p>
-<p><img src="../images/02/07.png" alt="提示库无法加载" style="width: 435px;height:152px;"></p>
+<p><img src="../images/02/07.png" alt="提示库无法加载"></p>
 <p>Google了一下，找到如下<a href="http://stackoverflow.com/questions/24211549/dyld-library-not-loaded-rpath-mydsk-framework-mydsk-swift-ios-8-0" target="_blank" rel="external">解决方案</a></p>
 <p>通过<code>Embedded Binaries</code> 嵌入已经完成编译的<code>Framework</code>，如下图：</p>
-<p><img src="../images/02/08.png" alt="Embedded Binaries" style="width: 404px;height:68px;"></p>
-<p><img src="../images/02/09.png" alt="选择TestFramework工程下编译好的Framework" style="width: 200px;height:230px;"></p>
+<p><img src="../images/02/08.png" alt="Embedded Binaries"></p>
+<p><img src="../images/02/09.png" alt="选择TestFramework工程下编译好的Framework"></p>
 <p>再次尝试运行编译到真机，顺利运行！</p>
 <h3 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h3><p>到这里似乎所有问题都已经解决了，但是后来用着用着，模拟器的编译和运行又出了些问题。</p>
 <p>#####问题一：</p>
-<p><img src="../images/02/10.png" alt="指定目录下要求嵌入的Framework不存在" style="width: 507px;height:128px;"></p>
+<p><img src="../images/02/10.png" alt="指定目录下要求嵌入的Framework不存在"></p>
 <p>于是去指定路径下看了看<code>Framework</code>到底存不存在。发现确实不存在，这个问题似乎也好解决，不存在我就编译一次，让它存在即可。<br>在真机模式下编译一次主工程以后，再回到模拟器模式下编译，通过！</p>
 <p>#####问题二：<br>通过<code>Xcode</code>运行到模拟器上，程序顺利启动并处于调试状态，但如果程序单独通过 点击模拟器上面的图标启动 则直接闪退。仔细想想原因以及为什么，这似乎和我解决真机编译运行崩溃有关，也就是我通过<code>Embedded Binaries</code>嵌入库以后出现的这个问题。所以我们再重新审视一下<code>Embedded Binaries</code>的嵌入情况：</p>
-<p><img src="../images/02/11.png" alt="Embedded Binaries" style="width: 384px;height:66px;"></p>
-<p><img src="../images/02/12.png" alt="Embedded Binaries" style="width: 400px;height:128px;"></p>
+<p><img src="../images/02/11.png" alt="Embedded Binaries"></p>
+<p><img src="../images/02/12.png" alt="Embedded Binaries"></p>
 <p>发现红框中描述了一个绝对路径,并且前往project.pbxproj查看时，里面也确实描述了一个绝对路径，指向Debug-iphoneos。但是我现在模拟器环境不应该把真机的Framework嵌入到模拟器的App包中，问题应该就出在这里。<br>我们尝试着对project.pbxproj里面写死的path修改一下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;TARGET_BUILD_DIR&#125;/TestFramework.framework</span><br></pre></td></tr></table></figure></p>
 <p>再次再模拟器环境下编译运行，通过！<br>接着脱离Xcode，直接在模拟器中点击打开App，运行成功！</p>
 <p>到此，在工作空间（Workspace）环境下使用动态库已经介绍完了，途中遇到的坑不算少。</p>
