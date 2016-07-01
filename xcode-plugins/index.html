@@ -6,19 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>好用的Xcode插件 | 余书懿的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="引言插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.
-参考资料:1:插件制作入门">
+  <meta name="description" content="引言当下Xcode插件已经非常丰富了，好用的插件不仅可以提供你的工作效率，还可以让你工作中，非常爽！在文本中分享一下博主目前正在使用的插件。
+Alcatraz 插件管家Alcatraz就像一个商店一样，罗列出Xcode所有的插件给开发者选择并使用。
+ClangFormat 代码格式化ClangFormat用来对代码进行格式化和整理，内置了几种常用的代码风格供选择。
+InjectionPlugin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="好用的Xcode插件">
 <meta property="og:url" content="http://yoursite.com/xcode-plugins/index.html">
 <meta property="og:site_name" content="余书懿的技术博客">
-<meta property="og:description" content="引言插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.
-参考资料:1:插件制作入门">
-<meta property="og:updated_time" content="2016-03-30T08:30:35.000Z">
+<meta property="og:description" content="引言当下Xcode插件已经非常丰富了，好用的插件不仅可以提供你的工作效率，还可以让你工作中，非常爽！在文本中分享一下博主目前正在使用的插件。
+Alcatraz 插件管家Alcatraz就像一个商店一样，罗列出Xcode所有的插件给开发者选择并使用。
+ClangFormat 代码格式化ClangFormat用来对代码进行格式化和整理，内置了几种常用的代码风格供选择。
+InjectionPlugin">
+<meta property="og:image" content="http://alcatraz.io/images/screenshot@2x.png">
+<meta property="og:image" content="https://camo.githubusercontent.com/0a3a8081d678c4cd6acfdc606be16916dd65e848/68747470733a2f2f7261772e6769746875622e636f6d2f7472617669736a6566666572792f436c616e67466f726d61742d58636f64652f6d61737465722f524541444d452f75736167652e706e67">
+<meta property="og:image" content="https://github.com/johnno1962/injectionforxcode/blob/master/documentation/images/injection_tunable.gif">
+<meta property="og:image" content="https://github.com/MakeZL/ZLGotoSandboxPlugin/blob/master/screenshot1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/limejelly/Backlight-for-XCode/master/screenshot.png">
+<meta property="og:image" content="https://camo.githubusercontent.com/c28d1cf0d3b079c807f79cb6deb5785aff28e9be/687474703a2f2f696e6a656374696f6e666f7278636f64652e6a6f686e686f6c6473776f7274682e636f6d2f67697464696666322e706e67">
+<meta property="og:image" content="https://camo.githubusercontent.com/58e452b57245cd79c2e59ac7926609be4dffbfd8/68747470733a2f2f7261772e6769746875622e636f6d2f6f6e65766361742f5656446f63756d656e7465722d58636f64652f6d61737465722f7676646f63756d656e7465722d73776966742e676966">
+<meta property="og:updated_time" content="2016-07-01T17:12:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="好用的Xcode插件">
-<meta name="twitter:description" content="引言插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.
-参考资料:1:插件制作入门">
+<meta name="twitter:description" content="引言当下Xcode插件已经非常丰富了，好用的插件不仅可以提供你的工作效率，还可以让你工作中，非常爽！在文本中分享一下博主目前正在使用的插件。
+Alcatraz 插件管家Alcatraz就像一个商店一样，罗列出Xcode所有的插件给开发者选择并使用。
+ClangFormat 代码格式化ClangFormat用来对代码进行格式化和整理，内置了几种常用的代码风格供选择。
+InjectionPlugin">
+<meta name="twitter:image" content="http://alcatraz.io/images/screenshot@2x.png">
   
     <link rel="alternative" href="/atom.xml" title="余书懿的技术博客" type="application/atom+xml">
   
@@ -248,27 +262,16 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>插件对于任何一个作业型的平台都是至关重要的，Xcode当然也不例外。本文主要介绍博主在iOS开发当中常用的插件。<br>Alcatraz是一个可以帮你集中管理Xcode插件的”插件”,它的用途类似于CocoaPods. 通过Alcatraz来使用插件是一件非常方面的事情,我们无需再去Github上面费劲的搜索这方面的资源,因为Alcatraz已经囊括了大部分开源出来的插件.</p>
-<p>参考资料:<br>1:插件制作入门<br><a href="http://onevcat.com/2013/02/xcode-plugin/" target="_blank" rel="external">http://onevcat.com/2013/02/xcode-plugin/</a><br>2:XCode插件管理工具：Alcatraz<br><a href="http://t.cn/zQEVFpS" target="_blank" rel="external">http://t.cn/zQEVFpS</a></p>
-<p>安装:<br>Alcatraz的Github托管地址如下:<br><a href="https://github.com/mneorr/alcatraz" target="_blank" rel="external">https://github.com/mneorr/alcatraz</a><br>它的安装方式非常简单,只需要一步,启动终端粘贴如下命令 运行即可:<br>mkdir -p ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins;<br>curl -L <a href="http://goo.gl/xfmmt" target="_blank" rel="external">http://goo.gl/xfmmt</a> | tar xv -C ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -<br>不过以上的安装所安装的版本可能不是最新的,但也不会差很远,如果需要安装最新版本的,可以前往Alcatraz的Github地址下载源码自行编译.<br>不过记得在编译之前,用终端执行pod install获取一下Alcatraz所需要的依赖框架. 否则无法编译通过.</p>
-<p>安装成功以后,我们可以在Xcode的顶部菜单Window中打开它来,当然在这之前你有必要重启一下你的Xcode:</p>
-<p>使用:<br>Alcatraz主要包含了以下三类插件,<br>分别是:<br>1.集成插件<br>2.代码颜色方案<br>3.代码模版</p>
-<p>使用Alcatraz提供的插件只需要对相应插件进行勾选即可完成安装, 如果是卸载则取消选中.  如果需要更新某个插件,只需要取消选中以后再一次勾选即可完成更新.</p>
-<p>个人认为最实用的应该是集成插件这一块,通过安装一些有用的插件,可以全面的加速我们的开发效率.<br>接下来介绍几个目前我正在使用的插件:<br>1:KSImageNamed<br>在编写代码的时编译器提供的代码智能感知启着举足轻重的地位. 但是Xcoode对资源那一块的名称却没有提供智能感知. 这多多少少影响了一些效率,甚至让人烦躁.<br>不过好在KSImageNamed的出现,很好的解决了这个问题. 它可以智能感知目前工程中内的图片资料,通过我们常用的imageNamed,即可自动的显示出来,如下图:</p>
-<p>2:OMColorSense<br>在代码中,我们经常需要对UI控件设置具体的颜色值,可是UIKit提供的颜色API设置起来非常繁琐,且不够直观.<br>而OMColorSense的出现就是为了解决这个不够直观和设置繁琐的问题.<br>安装完插件以后,我们可以直接在代码层面直接打开颜色选择器,来快速设置,并且可以预览我们设定的颜色是否正确,这实在太棒了!</p>
-<p>3:VVDocumenter-Xcode<br>VVDocumenter-Xcode是一个主要辅助编写注释的插件,通过三个反斜杠///所生成的注释格式,将与苹果官方保持一致,这样很好的兼容了Xcode自带注释查看功能.</p>
-<p>4:AutoresizeMask-for-Xcode<br>AutoresizeMask-for-Xcode让AutoresizingMask在代码层面拥有和xib一样的可视化的效果,这方便我们用好和用准AutoresizingMask</p>
-<p>5:SCXcodeMiniMap<br>SCXcodeMiniMap的灵感应该来源于Sublime Text.在代码编辑页面中,添加整页代码的迷你预览图,方面使用者能够快速拖动定位到关键位置.</p>
-<p>6:Lin(Xcode 5 需要手动安装)<br>Lin是一个辅助iOS多语言功能的插件. 通过使用它可以大大的节省我们在多语言编码时的劳动力. 我相信,一担用起来,你就会喜欢上它了.</p>
-<p>7:FuzzyAutocompletePlugin<br>代码自动补全的升级版,及时你输入错误了,它也帮你提示出,你最想提示的那行代码,牛B.</p>
-<p>8:XToDo<br>是否有为待办事项写注释的习惯??  久了久了 又忘掉了? XToDo可以帮你显示出代码中所有的待办列表,并且迅速定位</p>
-<p>9:RRConstraintsPlugin<br>RRConstraintsPlugin是一个在IB中使用自动布局的辅助插件.</p>
-<p>10:injectionforxcode<br>injectionforxcode是一个神奇的插件,可以实时的修改代码,而不需要重新编译运行到模拟器中.其核心实现技术真是一大亮点.</p>
-<p>参考资料:<br><a href="http://nonomori.farbox.com/post/injection-plugin-for-xcode" target="_blank" rel="external">http://nonomori.farbox.com/post/injection-plugin-for-xcode</a></p>
-<p>卸载:<br>卸载Alcatraz只需要两部操作<br>1:删除 ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin<br>2:利用终端命令删除Alcatraz生成的文件夹和其文件<br>rm -rf ~/Library/Application\ Support/Alcatraz/</p>
-<p>风险:<br>当我们将各个插件成功安装以后,在Xcode的每次启动时都会去加载我们集成进去的插件资源. 而这些插件都附属在Xcode的进程里,也就是说,是在同一条生命线上面.此时如果插件中的任何一行代码有误,所产生的Crash,都会导致Xcode整个进程一起挂掉.<br>理想的情况下,插件的作者都会在最新版本的Xcode进行测试并修复相应问题. 但如果我们自己需要急着使用最新版本的Xcode,而此时插件作者还没有提供更新,那也只好先将相应的插件卸载掉,以此来避免因新版本兼容性问题所引起的Crash.<br>安装后的插件所存储的目录是:<br>~/Library/Application Support/Developer/Shared/Xcode<br>也可以手动清除所有插件.</p>
-<p>总结:</p>
-
+        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>当下Xcode插件已经非常丰富了，好用的插件不仅可以提供你的工作效率，还可以让你工作中，非常爽！在文本中分享一下博主目前正在使用的插件。</p>
+<h4 id="Alcatraz-插件管家"><a href="#Alcatraz-插件管家" class="headerlink" title="Alcatraz 插件管家"></a>Alcatraz 插件管家</h4><p><a href="http://alcatraz.io/" target="_blank" rel="external">Alcatraz</a>就像一个商店一样，罗列出Xcode所有的插件给开发者选择并使用。<br><img src="http://alcatraz.io/images/screenshot@2x.png" alt="介绍图"></p>
+<h4 id="ClangFormat-代码格式化"><a href="#ClangFormat-代码格式化" class="headerlink" title="ClangFormat 代码格式化"></a>ClangFormat 代码格式化</h4><p><a href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="external">ClangFormat</a>用来对代码进行格式化和整理，内置了几种常用的代码风格供选择。<br><img src="https://camo.githubusercontent.com/0a3a8081d678c4cd6acfdc606be16916dd65e848/68747470733a2f2f7261772e6769746875622e636f6d2f7472617669736a6566666572792f436c616e67466f726d61742d58636f64652f6d61737465722f524541444d452f75736167652e706e67" alt="介绍图"></p>
+<h4 id="InjectionPlugin-动态注入"><a href="#InjectionPlugin-动态注入" class="headerlink" title="InjectionPlugin 动态注入"></a>InjectionPlugin 动态注入</h4><p><a href="https://github.com/johnno1962/injectionforxcode" target="_blank" rel="external">InjectionPlugin</a>基于Objective-C运行时实现动态注入，挺厉害的，这样不用重编代码运行，就可以看到代码修改后的效果，特别调试一些细节和动态的时候，节省不少时间。<br><img src="https://github.com/johnno1962/injectionforxcode/blob/master/documentation/images/injection_tunable.gif" alt="介绍图"></p>
+<h4 id="ZLGotoSandbox-快捷进入应用沙盒"><a href="#ZLGotoSandbox-快捷进入应用沙盒" class="headerlink" title="ZLGotoSandbox 快捷进入应用沙盒"></a>ZLGotoSandbox 快捷进入应用沙盒</h4><p><a href="https://github.com/MakeZL/ZLGotoSandboxPlugin" target="_blank" rel="external">ZLGotoSandbox</a>可以帮助你快捷进入指定应用的沙盒目录，用一次爽一次！<br><img src="https://github.com/MakeZL/ZLGotoSandboxPlugin/blob/master/screenshot1.png" alt="介绍图"></p>
+<h4 id="XcodeColors-炫彩控制台日志"><a href="#XcodeColors-炫彩控制台日志" class="headerlink" title="XcodeColors 炫彩控制台日志"></a>XcodeColors 炫彩控制台日志</h4><p><a href="https://github.com/MakeZL/ZLGotoSandboxPlugin" target="_blank" rel="external">XcodeColors</a>可以基于代码行为决定日式的输出颜色，代码行为即可根据开发者自行定义，例如常用的行为有以下几种：普通信息，警告信息，错误信息。通过醒目的颜色区分以后，避免开发者忽略重要的日志。</p>
+<h4 id="Backlight"><a href="#Backlight" class="headerlink" title="Backlight"></a>Backlight</h4><p><a href="https://github.com/limejelly/Backlight-for-XCode" target="_blank" rel="external">Backlight</a>是一个可以让当前编辑文件选中行高亮的插件，我平常喜欢用Xcode的那款黑色主题，而此时经常看不清光标的位置，总要找半天。这款插件就可以很好的解决这个问题！<br><img src="https://raw.githubusercontent.com/limejelly/Backlight-for-XCode/master/screenshot.png" alt="介绍图"></p>
+<h4 id="GitDiff"><a href="#GitDiff" class="headerlink" title="GitDiff"></a>GitDiff</h4><p><a href="https://github.com/johnno1962/GitDiff" target="_blank" rel="external">GitDiff</a>真是一款不可多得Git插件，太好用了，在Xcode打开一个编辑过的文件，就能立刻通过边线的色块告知你哪些位置是修改过，当你不小心改错了，还可以通过左侧的还原按钮立刻Change回原来的代码！<br><img src="https://camo.githubusercontent.com/c28d1cf0d3b079c807f79cb6deb5785aff28e9be/687474703a2f2f696e6a656374696f6e666f7278636f64652e6a6f686e686f6c6473776f7274682e636f6d2f67697464696666322e706e67" alt="介绍图"></p>
+<h4 id="VVDocumenter-Xcode"><a href="#VVDocumenter-Xcode" class="headerlink" title="VVDocumenter-Xcode"></a>VVDocumenter-Xcode</h4><p><a href="https://github.com/onevcat/VVDocumenter-Xcode" target="_blank" rel="external">VVDocumenter-Xcode</a>用于快速对代码添加标准格式的注释，也是用一次爽一次的那种！<br><img src="https://camo.githubusercontent.com/58e452b57245cd79c2e59ac7926609be4dffbfd8/68747470733a2f2f7261772e6769746875622e636f6d2f6f6e65766361742f5656446f63756d656e7465722d58636f64652f6d61737465722f7676646f63756d656e7465722d73776966742e676966" alt="介绍图"></p>
+<h4 id="SuggestedColors"><a href="#SuggestedColors" class="headerlink" title="SuggestedColors"></a>SuggestedColors</h4>
       
     </div>
     
@@ -277,11 +280,11 @@ var _hmt = _hmt || [];
     
 <nav id="article-nav">
   
-    <a href="/about-terminal/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/use-asset-catalog/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          about-terminal
+          use-asset-catalog
         
       </div>
     </a>
