@@ -309,8 +309,14 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>git rev-list –count master</p>
-<p>看某个Tag<br>git rev-list –count Dodo_1.0</p>
+        <h6 id="看某个Tag"><a href="#看某个Tag" class="headerlink" title="看某个Tag"></a>看某个Tag</h6><pre><code>git rev-list --count Dodo_1.0
+git rev-list --count master
+</code></pre><h6 id="直观的Git-Log"><a href="#直观的Git-Log" class="headerlink" title="直观的Git Log"></a>直观的Git Log</h6><pre><code>$ git log --all --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos; --abbrev-commit --date=relative
+</code></pre><h6 id="直观的Git-Status"><a href="#直观的Git-Status" class="headerlink" title="直观的Git Status"></a>直观的Git Status</h6><pre><code>$ git status -sb
+</code></pre><h6 id="搜索提交信息"><a href="#搜索提交信息" class="headerlink" title="搜索提交信息"></a>搜索提交信息</h6><pre><code>$ git log --grep=&apos;C90&apos; --pretty=oneline
+</code></pre><h6 id="合并-某个分支-下-的-某次提交"><a href="#合并-某个分支-下-的-某次提交" class="headerlink" title="合并 某个分支 下 的 某次提交"></a>合并 某个分支 下 的 某次提交</h6><p><a href="http://blog.csdn.net/ybdesire/article/details/42145597" target="_blank" rel="external">http://blog.csdn.net/ybdesire/article/details/42145597</a></p>
+<h5 id="Source-Tree"><a href="#Source-Tree" class="headerlink" title="Source Tree"></a>Source Tree</h5><pre><code>$ Reset Master to thie commit
+</code></pre><p>回退到 当前 选中的 分支。 那么在这个分支 之后 提交的 文件修改 都会被还原， 处于 待提交 的状态</p>
 
       
     </div>
