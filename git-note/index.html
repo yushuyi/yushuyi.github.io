@@ -16,7 +16,7 @@ git rev-list --count master
 <meta property="og:description" content="看某个Taggit rev-list --count Dodo_1.0
 git rev-list --count master
 直观的Git Log$ git log --all --graph --pretty=format:&amp;apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Cre">
-<meta property="og:updated_time" content="2016-07-04T09:47:59.000Z">
+<meta property="og:updated_time" content="2016-07-20T11:18:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git使用笔记">
 <meta name="twitter:description" content="看某个Taggit rev-list --count Dodo_1.0
@@ -97,7 +97,7 @@ var _hmt = _hmt || [];
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -257,8 +257,12 @@ git rev-list --count master
 </code></pre><h6 id="直观的Git-Status"><a href="#直观的Git-Status" class="headerlink" title="直观的Git Status"></a>直观的Git Status</h6><pre><code>$ git status -sb
 </code></pre><h6 id="搜索提交信息"><a href="#搜索提交信息" class="headerlink" title="搜索提交信息"></a>搜索提交信息</h6><pre><code>$ git log --grep=&apos;C90&apos; --pretty=oneline
 </code></pre><h6 id="合并-某个分支-下-的-某次提交"><a href="#合并-某个分支-下-的-某次提交" class="headerlink" title="合并 某个分支 下 的 某次提交"></a>合并 某个分支 下 的 某次提交</h6><p><a href="http://blog.csdn.net/ybdesire/article/details/42145597" target="_blank" rel="external">http://blog.csdn.net/ybdesire/article/details/42145597</a></p>
+<h6 id="看某个Tag-1"><a href="#看某个Tag-1" class="headerlink" title="看某个Tag"></a>看某个Tag</h6><pre><code>git rev-list --count Dodo_1.0
+</code></pre><h6 id="删除某次远程提交"><a href="#删除某次远程提交" class="headerlink" title="删除某次远程提交"></a>删除某次远程提交</h6><p>先 reset 到 要删除的前一个commit，再 git push -f 强制推送，<br>注意：运行后需要输入git远程仓库的密码<br><a href="https://segmentfault.com/q/1010000000149795" target="_blank" rel="external">https://segmentfault.com/q/1010000000149795</a></p>
+<h6 id="忽略本地指定文件的修改状态"><a href="#忽略本地指定文件的修改状态" class="headerlink" title="忽略本地指定文件的修改状态"></a>忽略本地指定文件的修改状态</h6><pre><code>git update-index --assume-unchanged DoudouApp/DoudouApp.xcworkspace/contents.xcworkspacedata
+</code></pre><p>修改为 <code>--no-assume-unchanged</code>  则不忽略</p>
 <h5 id="Source-Tree"><a href="#Source-Tree" class="headerlink" title="Source Tree"></a>Source Tree</h5><pre><code>$ Reset Master to thie commit
-</code></pre><p>回退到 当前 选中的 分支。 那么在这个分支 之后 提交的 文件修改 都会被还原， 处于 待提交 的状态</p>
+</code></pre><p>回退到当前<code>选中的</code>分支。 那么在这个分支之后<code>提交的</code>文件修改都会被还原， 处于<code>待提交</code>的状态</p>
 
       
     </div>

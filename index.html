@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -213,6 +213,69 @@ var _hmt = _hmt || [];
 
       <div class="body-wrap">
   
+    <article id="post-playground" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/playground/" class="article-date">
+  	<time datetime="2016-07-12T11:35:19.000Z" itemprop="datePublished">2016-07-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/playground/">深入使用Playground</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h3><p>Playground是苹果在WWDC2014上面为Xcode添加的新特性，随同Swift语言一起诞生，为开发者提供一个所见即所得的工作环境，这对于一些需要频繁在模拟器上运行查看效果的调试类功能，就显得非常有优势，因为它够快，当你修改完你的代码时，它就立刻执行这些代码，并在展示区显示代码的执行结果。本文主要的介绍Playground在实际项目中的运用场景。</p>
+<blockquote>
+<p>Playground都有哪些使用场景？</p>
+<ul>
+<li>调试你自己的Framework</li>
+<li>自定义的UI小部件</li>
+<li>函数调试</li>
+<li>网络接口调试</li>
+</ul>
+</blockquote>
+<p>当你发现为了调试某些功能需要不停的在模拟器查看的时候？那么应该考虑一下Playground</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-terminal-and-ios" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -315,8 +378,12 @@ git rev-list --count master
 </code></pre><h6 id="直观的Git-Status"><a href="#直观的Git-Status" class="headerlink" title="直观的Git Status"></a>直观的Git Status</h6><pre><code>$ git status -sb
 </code></pre><h6 id="搜索提交信息"><a href="#搜索提交信息" class="headerlink" title="搜索提交信息"></a>搜索提交信息</h6><pre><code>$ git log --grep=&apos;C90&apos; --pretty=oneline
 </code></pre><h6 id="合并-某个分支-下-的-某次提交"><a href="#合并-某个分支-下-的-某次提交" class="headerlink" title="合并 某个分支 下 的 某次提交"></a>合并 某个分支 下 的 某次提交</h6><p><a href="http://blog.csdn.net/ybdesire/article/details/42145597" target="_blank" rel="external">http://blog.csdn.net/ybdesire/article/details/42145597</a></p>
+<h6 id="看某个Tag-1"><a href="#看某个Tag-1" class="headerlink" title="看某个Tag"></a>看某个Tag</h6><pre><code>git rev-list --count Dodo_1.0
+</code></pre><h6 id="删除某次远程提交"><a href="#删除某次远程提交" class="headerlink" title="删除某次远程提交"></a>删除某次远程提交</h6><p>先 reset 到 要删除的前一个commit，再 git push -f 强制推送，<br>注意：运行后需要输入git远程仓库的密码<br><a href="https://segmentfault.com/q/1010000000149795" target="_blank" rel="external">https://segmentfault.com/q/1010000000149795</a></p>
+<h6 id="忽略本地指定文件的修改状态"><a href="#忽略本地指定文件的修改状态" class="headerlink" title="忽略本地指定文件的修改状态"></a>忽略本地指定文件的修改状态</h6><pre><code>git update-index --assume-unchanged DoudouApp/DoudouApp.xcworkspace/contents.xcworkspacedata
+</code></pre><p>修改为 <code>--no-assume-unchanged</code>  则不忽略</p>
 <h5 id="Source-Tree"><a href="#Source-Tree" class="headerlink" title="Source Tree"></a>Source Tree</h5><pre><code>$ Reset Master to thie commit
-</code></pre><p>回退到 当前 选中的 分支。 那么在这个分支 之后 提交的 文件修改 都会被还原， 处于 待提交 的状态</p>
+</code></pre><p>回退到当前<code>选中的</code>分支。 那么在这个分支之后<code>提交的</code>文件修改都会被还原， 处于<code>待提交</code>的状态</p>
 
       
     </div>
@@ -788,132 +855,10 @@ echo &quot;$var/R.swift/rswift&quot; #打印路径确认是否正确
 
 
   
-    <article id="post-hexo-github-guide" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/hexo-github-guide/" class="article-date">
-  	<time datetime="2016-03-02T15:45:57.000Z" itemprop="datePublished">2016-03-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/hexo-github-guide/">基于Hexo+Github搭建个人博客</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>是一款集快速、简洁且高效的博客框架,基于<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>开发，本文主要介绍<code>Hexo+Github</code>部署博客的流程以及遇到的问题。</p>
-<h3 id="过程导航"><a href="#过程导航" class="headerlink" title="过程导航"></a>过程导航</h3><blockquote>
-<p>整个过程大概是以下三步：</p>
-<ul>
-<li>安装和部署Hexo</li>
-<li>配置Hexo并关联至Github Pages</li>
-<li>博客文件管理与撰写文章</li>
-</ul>
-</blockquote>
-<h3 id="安装和部署Hexo"><a href="#安装和部署Hexo" class="headerlink" title="安装和部署Hexo"></a>安装和部署Hexo</h3><h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><p>前往<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>的官网下载安装包并安装。</p>
-<h6 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h6><pre><code>$ npm install hexo-cli -g
-</code></pre><h6 id="初始化Hexo至指定目录"><a href="#初始化Hexo至指定目录" class="headerlink" title="初始化Hexo至指定目录"></a>初始化Hexo至指定目录</h6><pre><code>$ hexo init /path
-$ cd /path
-$ npm install
-</code></pre><h6 id="生成静态界面"><a href="#生成静态界面" class="headerlink" title="生成静态界面"></a>生成静态界面</h6><pre><code>$ hexo generate(缩写 hexo g)
-</code></pre><h6 id="本地运行Hexo"><a href="#本地运行Hexo" class="headerlink" title="本地运行Hexo"></a>本地运行Hexo</h6><pre><code>$ hexo server(缩写 hexo s)
-</code></pre><p>到此，<code>Hexo</code>的安装已经完成！控制台会提示你通过浏览器打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br><img src="../images/01/01.png" alt="Hexo本地服务完成启动"></p>
-<h6 id="Hexo主配置文件"><a href="#Hexo主配置文件" class="headerlink" title="Hexo主配置文件"></a>Hexo主配置文件</h6><p><code>Hexo</code>主配置文件位于<code>init</code>完成以后的根目录</p>
-<pre><code>/Blog path/_config.yml
-</code></pre><h6 id="选定主题"><a href="#选定主题" class="headerlink" title="选定主题"></a>选定主题</h6><p>知乎的这篇<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">帖子</a>介绍了目前基于<code>Hexo</code>开发的个性主题。</p>
-<p>我自己选择的是<code>yilia</code>主题，选定主题后，一般的部署方式是<code>Clone</code>项目到<code>/Blog path/themes</code>目录以后，修改<code>/Blog path/_config.yml</code>的<code>theme</code>参数为主题<code>目录</code>的名称，那么<code>Hexo</code>在生成<code>静态页面</code>时，会根据新的主题进行生成。</p>
-<h3 id="配置Hexo并关联至Github-Pages"><a href="#配置Hexo并关联至Github-Pages" class="headerlink" title="配置Hexo并关联至Github Pages"></a>配置Hexo并关联至Github Pages</h3><p>本地运行没有问题后，开始尝试将生成后的代码部署到服务器上面，这里主要介绍如何部署到<code>Github Pages</code>上面。首页我们需要在<code>Github</code>上面生成一个新的仓库，<br>具体的流程可以参考<code>Github</code>官方创建<code>Pages</code>的教程。<br>仓库创建完成后，我们需要再次修改<code>_config.yml</code>让<code>Hexo</code>与<code>Github Pages</code>进行关联，配置如下：</p>
-<pre><code>deploy:
-  type: git
-  repository: git@github.com:yushuyi/yushuyi.github.io.git
-  branch: master
-</code></pre><p>配置完成以后执行以下命令</p>
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><p>最终执行部署</p>
-<pre><code>hexo deploy(缩写 hexo d)
-</code></pre><p>一切顺利的话，会提示如下图：<br><img src="../images/01/04.png" alt="Hexo已完成部署至Git"></p>
-<h3 id="博客文件管理与撰写文章"><a href="#博客文件管理与撰写文章" class="headerlink" title="博客文件管理与撰写文章"></a>博客文件管理与撰写文章</h3><h4 id="博客文件管理"><a href="#博客文件管理" class="headerlink" title="博客文件管理"></a>博客文件管理</h4><p><code>Hexo init</code>生成后的文件对于博客主来说非常重要，相当于你的博客管理后台，更相当于程序的源代码，既然是源代码就会涉及到维护的问题，所以，选择合适的版本控制工具是非常有必要的，我采用的方案是<a href="https://bitbucket.org" target="_blank" rel="external">BitBucket</a>来对源代码进行版本控制。</p>
-<p><code>BitBucket</code>提供最多五个人的免费私有仓库。对个博客主来说是非常不错的选择。</p>
-<h4 id="撰写文章"><a href="#撰写文章" class="headerlink" title="撰写文章"></a>撰写文章</h4><p>撰写文章方面我选用的是<a href="http://macdown.uranusjr.com/" target="_blank" rel="external">MacDown</a></p>
-<h4 id="添加百度统计"><a href="#添加百度统计" class="headerlink" title="添加百度统计"></a>添加百度统计</h4><p>我参考的是这篇<a href="http://www.pmbuf.com/2015/09/15/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/" target="_blank" rel="external">文章</a>，基于<code>yilia</code>主题</p>
-<h3 id="在撰写博客时，遇到的一些问题"><a href="#在撰写博客时，遇到的一些问题" class="headerlink" title="在撰写博客时，遇到的一些问题"></a>在撰写博客时，遇到的一些问题</h3><h4 id="Hexo-默认主题打开非常缓慢"><a href="#Hexo-默认主题打开非常缓慢" class="headerlink" title="Hexo 默认主题打开非常缓慢"></a>Hexo 默认主题打开非常缓慢</h4><p>抓包访问以后发现，原来默认的主题采用了<code>Google</code>一款云字体，这是导致缓慢的主要原因，这有一片<a href="http://kuangqi.me/tricks/hexo-optimizations-for-mainland-china/" target="_blank" rel="external">文章</a>详细介绍了如何去除<code>Google</code>的云字体</p>
-<h4 id="MacdDown图片路径问题"><a href="#MacdDown图片路径问题" class="headerlink" title="MacdDown图片路径问题:"></a><code>MacdDown</code>图片路径问题:</h4><p>设置图片的代码直接用<code>HTML</code>,而不是用<code>Markdown</code>标准的语法，原因是可以灵活设置大小，代码如下：</p>
-<pre><code>&lt;img src=&quot;../images/01/01.png&quot; alt=&quot;图片的本地路径&quot;/&gt;
-</code></pre><p>那么对应在<code>/Blog path/source/</code> 目录下我也会设置好这个图片：<br><img src="../images/01/02.png" alt="图片的本地路径"></p>
-<p><code>MacDown</code>会根据相对路径找到图片并显示出来。<br>但是<code>Hexo</code>生成运行之后，在浏览器却无法正常加载，<strong>路径无效</strong>。检查后发现，原来<code>Hexo</code>在生成博客文章时，会根据时间来按文件夹细分，默认情况下精确到<strong>年-月-日-文章名称</strong>的路径，如下图：<br><img src="../images/01/03.png" alt="博客默认的生成路径"></p>
-<p>那么我们前面设置的图片路径肯定是无法正确加载图片，因为路径不正确。<br>解决办法是修改<code>Hexo</code>生成博客文件路径的方式，。打开<code>/Blog path/_config.yml</code> 找到第17行,代码如下：</p>
-<pre><code>permalink: :year/:month/:day/:title/
-</code></pre><p>我们将生成的方式修改为只根据title进行生成，代码如下：</p>
-<pre><code>permalink: :title/
-</code></pre><p>保存以后重新生成并运行，图片完成展示出来！</p>
-<h4 id="使用yilia主题以后导致图片大小设置无效的问题："><a href="#使用yilia主题以后导致图片大小设置无效的问题：" class="headerlink" title="使用yilia主题以后导致图片大小设置无效的问题："></a>使用<code>yilia</code>主题以后导致图片大小设置无效的问题：</h4><p>因为我是在<code>Retina MacBook Pro</code>下进行截图，截出来的图也同样是高清分辨率，而<code>yilia</code>会默认安图片的原始大小进行展示，即便我设置了指定的宽高也无济于事。于是我去检查<code>Hexo</code>生成的<code>index.html</code>源代码，发现，<code>index.html</code>的<code>img</code>标签是没有错得。那么应该是<code>JavaScript</code>在运行时进行了改动。接下来就是阅读<code>yilia</code>的<code>js</code>源代码，寻找运行时修改的那一段，原来是<br>在<code>/Blog path/themes/yilia/source/js/main.js</code><br>里面有这么一段代码：</p>
-<pre><code>require([&apos;/fancybox/jquery.fancybox.js&apos;], function(pc){
-var isFancy = $(&quot;.isFancy&quot;);
-if(isFancy.length != 0){
-    var imgArr = $(&quot;.article-inner img&quot;);
-    for(var i=0,len=imgArr.length;i&lt;len;i++){
-        var src = imgArr.eq(i).attr(&quot;src&quot;);
-        var title = imgArr.eq(i).attr(&quot;alt&quot;);
-        imgArr.eq(i).replaceWith(&quot;&lt;a href=&apos;&quot;+src+&quot;&apos; title=&apos;&quot;+title+&quot;&apos; rel=&apos;fancy-group&apos; class=&apos;fancy-ctn fancybox&apos;&gt;&lt;img src=&apos;&quot;+src+&quot;&apos; title=&apos;&quot;+title+&quot;&apos;&gt;&lt;/a&gt;&quot;);
-    }
-    $(&quot;.article-inner .fancy-ctn&quot;).fancybox();
-}
-</code></pre><p><code>JavaScript</code>的代码我不是很懂，不过大概意思我是明白，所以我进行了如下修改：</p>
-<pre><code>require([&apos;/fancybox/jquery.fancybox.js&apos;], function(pc){
-var isFancy = $(&quot;.isFancy&quot;);
-if(isFancy.length != 0){
-    var imgArr = $(&quot;.article-inner img&quot;);
-    for(var i=0,len=imgArr.length;i&lt;len;i++){
-        var src = imgArr.eq(i).attr(&quot;src&quot;);
-        var title = imgArr.eq(i).attr(&quot;alt&quot;);
-        var style = imgArr.eq(i).attr(&quot;style&quot;)
-        imgArr.eq(i).replaceWith(&quot;&lt;a href=&apos;&quot;+src+&quot;&apos; title=&apos;&quot;+title+&quot;&apos; rel=&apos;fancy-group&apos; class=&apos;fancy-ctn fancybox&apos;&gt;&lt;img src=&apos;&quot;+src+&quot;&apos; title=&apos;&quot;+title+&quot;&apos; style=&apos;&quot;+style+&quot;&apos;&gt;&lt;/a&gt;&quot;);
-    }
-    $(&quot;.article-inner .fancy-ctn&quot;).fancybox();
-}
-</code></pre><p>保存重新生成并运行，图片大小可以灵活控制了</p>
-<h4 id="切换theme后-页面运行时样式错乱"><a href="#切换theme后-页面运行时样式错乱" class="headerlink" title="切换theme后 页面运行时样式错乱"></a>切换<code>theme</code>后 页面运行时样式错乱</h4><p>这个原因可能是<code>Hexo</code>生成页面的<code>BUG</code>，解决方法是执行清理命令重新生成一次。</p>
-<pre><code>hexo clean
-hexo g
-</code></pre>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">
